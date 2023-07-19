@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <title>Chuck Norris Jokes</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Chuck Norris Joke Generator</h1>
+    <img
+      src="https://media.gq.com/photos/5583008609f0bee56440d085/4:3/w_448,h_336,c_limit/news-politics-blogs-death-race-chucknorris1450.jpg"
+      alt=""
+    />
+    <form action="/jokes" method="post">
+      <h4>Pick A Category:</h4>
+      <div>
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="explicit"
+          />
+          Explicit
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="dev"
+          />
+          Dev
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="movie"
+          />
+          Movie
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="food"
+          />
+          Food
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="celebrity"
+          />
+          Celebrity
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="science"
+          />
+          Science
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="sport"
+          />
+          Sport
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="political"
+          />
+          Political
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="religion"
+          />
+          Religion
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="animal"
+          />
+          Animal
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="history"
+          />
+          History
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="music"
+          />
+          Music
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="travel"
+          />
+          Travel
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="career"
+          />
+          Career
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="money"
+          />
+          Money
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="radio-input-category"
+            name="category"
+            value="fashion"
+          />
+          Fashion
+        </label>
+      </div>
+      <button type="submit">GO</button>
+    </form>
+    <br />
+    <% if(category){%>
+    <h3>Category: <%= category %></h3>
+    <h2><%= joke %></h2>
+    <%};%>
+  </body>
+</html>
